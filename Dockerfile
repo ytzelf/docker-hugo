@@ -7,7 +7,7 @@ ENV HUGO_BINARY=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
 ENV GLIBC_VERSION 2.28-r0
 
 RUN set -x && \
-    apk add --update wget ca-certificates libstdc++
+    apk add --update wget ca-certificates libstdc++6
 
 # Install glibc
 RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \
