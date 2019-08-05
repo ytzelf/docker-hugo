@@ -33,5 +33,5 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${H
     apk del wget ca-certificates && \
     rm /var/cache/apk/*
 
-WORKDIR ${HUGO_SITE}`
+WORKDIR ${HUGO_SITE}
 EXPOSE 1313
